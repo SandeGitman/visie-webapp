@@ -10,3 +10,9 @@ function genereerVisie() {
   const how = howInput.value || '...';
 
   const tekst = `Onze organisatie bestaat omdat ${why}. 
+We bieden ${what}, waarbij wij ons onderscheiden door ${how}.`;
+
+  resultaat.textContent = tekst;
+}
+
+button.addEventListener('click', genereerVisie);
